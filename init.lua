@@ -4,10 +4,16 @@
 local RGBUI = {}
 
 -- Load core functionality.
-RGBUI.Core = require(script.Core.Core)
+local CoreModule = require(script.Core.Core)
+RGBUI.Core = CoreModule
 
 -- Initialize Core and its dependencies
 RGBUI.Core.init()
+
+-- Add Core.new as a direct method on RGBUI for convenience
+function RGBUI.new(instanceType)
+    return CoreModule.new(instanceType)
+end
 
 -- Load Debug module
 RGBUI.Debug = require(script.Core.Debug)

@@ -65,7 +65,7 @@ header
     :SetAlignment("Center")
 
 -- Add a title to the header
-local title = RGBUI.Core.new("TextLabel")
+local title = RGBUI.new("TextLabel")
 title
     :SetSize(UDim2.new(1, 0, 1, 0))
     :SetText("RGBUI Advanced Demo")
@@ -135,7 +135,7 @@ for i, item in ipairs(menuItems) do
 end
 
 -- Add form elements to the main content
-local formTitle = RGBUI.Core.new("TextLabel")
+local formTitle = RGBUI.new("TextLabel")
 formTitle
     :SetSize(UDim2.new(1, 0, 0, 30))
     :SetText("User Settings")
@@ -156,7 +156,7 @@ formGrid
     :SetSpacing(10, 10)
 
 -- Add form elements
-local nameLabel = RGBUI.Core.new("TextLabel")
+local nameLabel = RGBUI.new("TextLabel")
 nameLabel
     :SetText("Username:")
     :SetTheme({
@@ -172,7 +172,7 @@ nameInput
     :SetTheme(CustomTheme.Data.TextInput)
     :MakeFocusable(5)
 
-local ageLabel = RGBUI.Core.new("TextLabel")
+local ageLabel = RGBUI.new("TextLabel")
 ageLabel
     :SetText("Age:")
     :SetTheme({
@@ -188,7 +188,7 @@ ageSlider
     :SetTheme(CustomTheme.Data.Slider)
     :MakeFocusable(6)
 
-local notifyLabel = RGBUI.Core.new("TextLabel")
+local notifyLabel = RGBUI.new("TextLabel")
 notifyLabel
     :SetText("Notifications:")
     :SetTheme({
